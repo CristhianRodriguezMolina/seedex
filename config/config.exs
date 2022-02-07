@@ -8,7 +8,7 @@ config :seedex,
 config :seedex, Seedex.Repo,
   database: "seedex_test",
   username: "postgres",
-  pastword: "postgres",
+  password: "postgres",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
 
