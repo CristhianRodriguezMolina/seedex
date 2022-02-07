@@ -1,13 +1,13 @@
 defmodule Seedex.Mixfile do
   use Mix.Project
 
-  @version "0.3.0"
+  @version "0.3.2"
 
   def project do
     [
       app: :seedex,
       version: @version,
-      elixir: "~> 1.1",
+      elixir: "~> 1.13",
       description: "Seed data generation for Ecto",
       source_url: "https://github.com/danhper/seedex",
       elixirc_paths: elixirc_paths(Mix.env()),
