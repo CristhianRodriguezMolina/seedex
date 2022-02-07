@@ -48,7 +48,7 @@ defmodule Mix.Tasks.Seedex.Seed do
 
     seeds_path
     |> seeds_files(env)
-    |> Enum.each(&Code.require_file(&1))
+    |> Enum.each(&Code.compile_file(&1))
 
     unless opts[:quiet] do
       Mix.shell().info("Database has been populated with seeds from #{seeds_path}")
